@@ -23,9 +23,9 @@ for i in range(10):
 # you can click on the URL to see the original page. 
 # -----------------------------------------------------------------------------
 
-#import scraperwiki
-#html = scraperwiki.scrape('https://scraperwiki.com/hello_world.html')
-#print html
+import scraperwiki
+html = scraperwiki.scrape('https://scraperwiki.com/hello_world.html')
+print html
 
 # -----------------------------------------------------------------------------
 # In the next tutorial, you'll learn how to extract the useful parts
