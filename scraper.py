@@ -6,7 +6,7 @@
 import scraperwiki
 html = scraperwiki.scrape('https://www.inmo.ie/6022')
 print "Click on the ...more link to see the whole page"
-print html
+#print html
 
 # -----------------------------------------------------------------------------
 # 1. Parse the raw HTML to get the interesting bits - the part inside <td> tags.
