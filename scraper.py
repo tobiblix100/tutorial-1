@@ -4,7 +4,7 @@
 ###############################################################################
 
 import scraperwiki
-html = scraperwiki.scrape('https://www.inmo.ie/6022')
+html = scraperwiki.scrape('https://en.wikipedia.org/wiki/List_of_songs_recorded_by_the_Beatles')
 #print html
 
 # -----------------------------------------------------------------------------
