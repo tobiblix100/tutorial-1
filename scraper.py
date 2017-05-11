@@ -30,10 +30,12 @@ for td in tds:
     record = { "td" : td.text } # column name and value
     try:
         scraperwiki.sqlite.save(["td"], record) # save the records one by one
+        print td.text
     except:
         record = {"td": "NO ENTRY"}
         scraperwiki.sqlite.save(["td"], record)
-print td.text
+        print td.text
+
 # -----------------------------------------------------------------------------
 # Go back to the Tutorials page and continue to Tutorial 3 to learn about 
 # more complex scraping methods.
