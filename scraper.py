@@ -4,7 +4,7 @@
 ###############################################################################
 
 import scraperwiki
-html = scraperwiki.scrape('https://en.wikipedia.org/wiki/List_of_songs_recorded_by_the_Beatles')
+scraperwiki.scrape(' http:// inmo.ie/ 6022')
 #print html
 
 # -----------------------------------------------------------------------------
@@ -33,7 +33,7 @@ for td in tds:
     except:
         record = {"td": "NO ENTRY"}
         scraperwiki.sqlite.save(["td"], record)
-    
+print td.text
 # -----------------------------------------------------------------------------
 # Go back to the Tutorials page and continue to Tutorial 3 to learn about 
 # more complex scraping methods.
