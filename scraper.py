@@ -17,9 +17,9 @@ def scrape_table(root):
         table_cells = row.cssselect("td")
         if table_cells: 
             record['Artist'] = table_cells[0].text
-            record['Album'] = table_cells[1].text
+            record['Album'] = table_cells[4].text
             record['Released'] = table_cells[2].text
-            record['Sales m'] = table_cells[4].text
+            record['Sales m'] = table_cells[1].text
             # Print out the data we've gathered
             print record, '------------'
             # Finally, save the record to the datastore - 'Artist' is our unique key
