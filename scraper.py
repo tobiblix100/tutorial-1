@@ -16,7 +16,6 @@ def scrape_and_look_for_next_link(url):
     html = scraperwiki.scrape(url)
     print html
     root = lxml.html.fromstring(html)
-    scrape_table(root)
     rows = root.cssselect("table#TrolleyTable tr")  # selects all <tr> blocks within <table class="data">
     for row in rows:
         # Set up our data record - we'll need it later
