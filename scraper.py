@@ -16,10 +16,10 @@ def scrape_table(root):
         record = {}
         table_cells = row.cssselect("td")
         if table_cells: 
-            record['Artist'] = table_cells[5].text
-            record['Sales m'] = table_cells[4].text
-            record['Album'] = table_cells[1].text
-            record['Released'] = table_cells[2].text
+            record['Artist'] = table_cells[0].tag
+            record['Sales m'] = table_cells[4].tag
+            record['Album'] = table_cells[1].tag
+            record['Released'] = table_cells[2].tag
             
             # Print out the data we've gathered
             print record, '------------'
