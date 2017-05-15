@@ -22,8 +22,8 @@ def scrape_and_look_for_next_link(url):
         record = {}
         table_cells = row.cssselect("td")
         if table_cells:
-            record['RaceCourse'] = table_cells[0].text_content()
-            record['Information'] = table_cells[1].text_content()
+            record['RaceCourse'] = table_cells[0].text
+            record['Information'] = table_cells[1].text
             # Print out the data we've gathered
             print record, '------------'
             # Finally, save the record to the datastore - 'Artist' is our unique key
