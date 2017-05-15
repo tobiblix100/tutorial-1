@@ -27,7 +27,7 @@ def scrape_and_look_for_next_link(url):
             # Print out the data we've gathered
             print record, '------------'
             # Finally, save the record to the datastore - 'Artist' is our unique key
-            scraperwiki.sqlite.save(["Race_Courses_new"], record)
+            scraperwiki.sqlite.save(["RaceCourse"], record)
 # ---------------------------------------------------------------------------
 # START HERE: define your starting URL - then 
 # call a function to scrape it.
