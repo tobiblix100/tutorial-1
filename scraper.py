@@ -16,11 +16,11 @@ def scrape_and_look_for_next_link(url):
     html = scraperwiki.scrape(url)
     print html
     root = lxml.html.fromstring(html)
-    rows = root.cssselect("table tr")  # selects all <tr> blocks within <table class="data">
+    rows = root.cssselect("tr")  # selects all <tr> blocks within <table class="data">
     for row in rows:
         # Set up our data record - we'll need it later
         record = {}
-        table_cells = row.cssselect("td")
+        table_cells = row.cssselect("td p.ex1")
         if table_cells:
             record['RaceCourse'] = table_cells[0].text_content
             record['Information'] = table_cells[1].text_content
