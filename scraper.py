@@ -7,7 +7,7 @@ def scrape_ccg(url):
     html = scraperwiki.scrape(url)
     root = lxml.html.fromstring(html)
     #line below selects all <div class="reveal-modal medium"> - note that because there is a space in the value of the div class, we need to use a space to indicate that
-    rows = root.cssselect("li[background-color:#f8f8f8; width:30%; height:300px;display : inline-block;margin:10px 10px 0px 0px; vertical-align:top;]") 
+    rows = root.cssselect("background-color:#f8f8f8; width:30%; height:300px;display : inline-block;margin:10px 10px 0px 0px; vertical-align:top;") 
     for row in rows:
         # Set up our data record - we'll need it later
         record = {}
